@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marco Ferri Coaching · Personal Trainer a Roma Prati e online</title>
+  <meta name="description" content="Personal trainer a Roma Prati e coaching online. Allenamento one-to-one, programmi su misura e percorsi di trasformazione di 12 settimane. Prenota la prima sessione di valutazione gratuita.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0b0c'/%3E%3Cpath d='M10 50V14h11l11 15 11-15h11v36h-10V31L32 46 20 31v19z' fill='%23c6ff00'/%3E%3Cpath d='M44 58l14-14v8l-6 6z' fill='%23ff6a1f'/%3E%3C/svg%3E">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Marco Ferri Coaching">
+  <meta property="og:title" content="Marco Ferri Coaching · Personal Trainer a Roma Prati">
+  <meta property="og:description" content="Smetti di allenarti a caso. Personal training one-to-one a Roma Prati e coaching online: prima sessione di valutazione gratuita.">
+  <meta property="og:url" content="https://jockeys97.github.io/demo-siti-fitness/pt/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&amp;fit=crop&amp;w=1200&amp;q=75">
+  <meta property="og:image:alt" content="Atleta in una palestra buia pronto a sollevare un bilanciere">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Sprite icone SVG -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5L19.5 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.94 6.1 6.56.86-4.8 4.6 1.2 6.54L12 17.4l-5.9 3.2 1.2-6.54-4.8-4.6 6.56-.86z" fill="currentColor"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0012.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 005.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9a11.82 11.82 0 00-3.48-8.41z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s-7-6.1-7-11.5a7 7 0 0114 0c0 5.4-7 11.5-7 11.5z"/><circle cx="12" cy="10" r="2.6"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 011.1 4.2 2 2 0 013.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L7.1 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.8 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.5 6.4a2.8 2.8 0 00-1.9-2C18.9 4 12 4 12 4s-6.9 0-8.6.5a2.8 2.8 0 00-1.9 2A29 29 0 001 11.8a29 29 0 00.5 5.3A2.8 2.8 0 003.4 19c1.7.5 8.6.5 8.6.5s6.9 0 8.6-.5a2.8 2.8 0 001.9-2 29 29 0 00.5-5.2 29 29 0 00-.5-5.4z"/><path d="M9.8 15l5.7-3.2-5.7-3.3z"/></g></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path d="M16 3c.4 2.6 2 4.3 4.5 4.6v3.3c-1.7 0-3.2-.5-4.5-1.4V15a6 6 0 11-6-6h.5v3.3H10a2.7 2.7 0 102.7 2.7V3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></g></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Vai al contenuto principale</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Marco Ferri Coaching, torna all'inizio">
+        <span class="brand-mark" aria-hidden="true">MF</span>
+        <span class="brand-name">Marco Ferri <span>Coaching</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navigazione principale">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-box" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="#chi-sono">Chi sono</a></li>
+          <li><a class="nav-link" href="#servizi">Servizi e prezzi</a></li>
+          <li><a class="nav-link" href="#trasformazioni">Trasformazioni</a></li>
+          <li><a class="nav-link" href="#contatti">Contatti</a></li>
+          <li class="nav-cta-item"><a class="btn btn-lime btn-sm nav-link" href="#prenota">Prenota</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img
+          src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&amp;fit=crop&amp;w=1400&amp;q=75"
+          srcset="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&amp;fit=crop&amp;w=800&amp;q=75 800w,
+                  https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&amp;fit=crop&amp;w=1400&amp;q=75 1400w,
+                  https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&amp;fit=crop&amp;w=2000&amp;q=75 2000w"
+          sizes="(min-width: 960px) 62vw, 100vw"
+          width="1400" height="933"
+          alt="Atleta a torso nudo in una palestra buia, piegato sul bilanciere carico e pronto per uno stacco da terra"
+          fetchpriority="high">
+      </div>
+      <svg class="hero-edge" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <line class="hero-edge-lime" x1="22" y1="0" x2="0" y2="100"/>
+        <line class="hero-edge-orange" x1="25.5" y1="0" x2="3.5" y2="100"/>
+      </svg>
+      <span class="hero-vertical" aria-hidden="true">Roma · Prati · Est. 2016</span>
+
+      <div class="container hero-inner">
+        <p class="eyebrow eyebrow--hero"><span class="stripe" aria-hidden="true"></span>Personal trainer · Roma Prati &amp; online</p>
+        <h1 class="hero-title" id="hero-title">Smetti di allenarti <span class="hl">a caso.</span></h1>
+        <p class="hero-sub">
+          <span class="hero-sub-long">Personal training one-to-one nel mio studio a Prati e coaching online in tutta Italia. Programmi costruiti su di te, tecnica curata in ogni ripetizione e un coach che ti segue davvero, settimana dopo settimana.</span>
+          <span class="hero-sub-short">One-to-one nel mio studio a Prati o online in tutta Italia, con un programma su misura.</span>
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-lime btn-lg" href="#prenota">
+            Prenota la prima sessione
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="btn btn-outline btn-lg" href="https://wa.me/390000000000?text=Ciao%20Marco!%20Vorrei%20informazioni%20sulla%20prima%20sessione%20di%20prova." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+            Scrivimi su WhatsApp<span class="sr-only"> (si apre in una nuova scheda)</span>
+          </a>
+        </div>
+
+        <a class="hero-availability" href="#prenota">
+          <span class="pulse" aria-hidden="true"></span>
+          <span id="next-slot">Posti disponibili questa settimana</span>
+        </a>
+
+        <ul class="hero-stats" aria-label="Alcuni numeri">
+          <li><strong class="stat-num"><span class="stat-plus">+</span><span data-count="300">300</span></strong><span class="stat-label">clienti seguiti</span></li>
+          <li><strong class="stat-num"><span data-count="10">10</span></strong><span class="stat-label">anni di esperienza</span></li>
+          <li><strong class="stat-num"><span data-count="4.9" data-decimals="1">4,9</span><svg class="stat-star" aria-hidden="true"><use href="#i-star"/></svg></strong><span class="stat-label">media su 127 recensioni</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Forza</span><span>Dimagrimento</span><span>Ricomposizione corporea</span><span>Postura</span><span>Mobilità</span><span>Preparazione atletica</span><span>Coaching online</span><span>Over 50</span>
+        <span>Forza</span><span>Dimagrimento</span><span>Ricomposizione corporea</span><span>Postura</span><span>Mobilità</span><span>Preparazione atletica</span><span>Coaching online</span><span>Over 50</span>
+      </div>
+    </div>
+
+    <!-- ============ CHI SONO ============ -->
+    <section class="section about" id="chi-sono" aria-labelledby="about-title">
+      <span class="section-bignum" aria-hidden="true">01</span>
+      <div class="container">
+        <div class="about-grid">
+          <figure class="about-media reveal">
+            <div class="about-photo">
+              <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&amp;fit=crop&amp;w=1000&amp;q=75"
+                   width="1000" height="667" loading="lazy" decoding="async"
+                   alt="Marco Ferri seduto su una panca nella sala pesi del suo studio, in abbigliamento tecnico nero con una borraccia in mano">
+            </div>
+            <figcaption class="about-badge">
+              <strong>10</strong>
+              <span>anni sul campo,<br>dal 2016</span>
+            </figcaption>
+          </figure>
+
+          <div class="about-body">
+            <p class="eyebrow"><span class="eyebrow-num">01</span>Chi sono</p>
+            <h2 class="section-title reveal" id="about-title">Ciao, sono Marco. <span class="text-lime">Un coach, non un conta&#8209;ripetizioni.</span></h2>
+            <div class="about-text reveal">
+              <p>Ho iniziato ad allenarmi a 16 anni in una piccola palestra di quartiere. A 23 un infortunio al ginocchio mi ha fermato per mesi e mi ha insegnato la lezione più importante della mia carriera: <strong>allenarsi tanto non basta, bisogna allenarsi bene.</strong></p>
+              <p>Da lì sono arrivati la laurea in Scienze Motorie, le specializzazioni in forza e postura e dieci anni passati a seguire persone vere: manager con poco tempo, neo-mamme, over 50, sportivi amatoriali. Nel mio studio a Prati alleno <strong>una persona alla volta</strong>, perché ogni ripetizione conta.</p>
+            </div>
+            <blockquote class="about-quote reveal">
+              <p>«Il mio lavoro non è farti sudare. È portarti al risultato e insegnarti a mantenerlo.»</p>
+            </blockquote>
+
+            <h3 class="mini-title">Formazione e certificazioni</h3>
+            <ul class="certs reveal">
+              <li><span class="cert-year">2014</span><span>Laurea in Scienze Motorie</span></li>
+              <li><span class="cert-year">2016</span><span>Strength &amp; Conditioning Coach · Accademia Forza &amp; Movimento</span></li>
+              <li><span class="cert-year">2018</span><span>Specialista in Postura e Mobilità, 2° livello</span></li>
+              <li><span class="cert-year">2019</span><span>Istruttore Kettlebell, 1° livello</span></li>
+              <li><span class="cert-year">2021</span><span>Nutrizione sportiva applicata, corso avanzato</span></li>
+              <li><span class="cert-year">2025</span><span>BLSD · Primo soccorso e defibrillatore</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="method">
+          <h3 class="method-title reveal">Il metodo <span class="text-lime">MF</span> in 3 fasi</h3>
+          <ol class="method-list">
+            <li class="method-step reveal">
+              <span class="method-num" aria-hidden="true">1</span>
+              <h4>Analisi</h4>
+              <p>Test di movimento, composizione corporea, storia clinica e obiettivi. Partiamo dai dati, non dalle mode del momento.</p>
+            </li>
+            <li class="method-step reveal">
+              <span class="method-num" aria-hidden="true">2</span>
+              <h4>Piano</h4>
+              <p>Un programma costruito sui tuoi orari, sul tuo livello e sul tuo corpo. Periodizzato, misurabile, sostenibile nel tempo.</p>
+            </li>
+            <li class="method-step reveal">
+              <span class="method-num" aria-hidden="true">3</span>
+              <h4>Progressione</h4>
+              <p>Carichi aggiornati, correzioni continue e misurazioni ogni 4 settimane. Vedi i progressi nero su bianco.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVIZI E PREZZI ============ -->
+    <section class="section services" id="servizi" aria-labelledby="services-title">
+      <span class="section-bignum" aria-hidden="true">02</span>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span class="eyebrow-num">02</span>Servizi e prezzi</p>
+          <h2 class="section-title reveal" id="services-title">Scegli come <span class="text-lime">allenarti con me.</span></h2>
+          <p class="section-lead reveal">Prezzi chiari, nessun abbonamento vincolante. La prima sessione di valutazione è sempre gratuita, qualunque percorso tu scelga.</p>
+        </div>
+
+        <div class="pricing">
+          <article class="price-card reveal" aria-labelledby="plan-1">
+            <header class="price-head">
+              <h3 id="plan-1">Sessione singola</h3>
+              <p class="price-desc">Per provare il metodo o allenarti quando vuoi.</p>
+            </header>
+            <p class="price"><span class="price-cur">€</span><span class="price-val">50</span><span class="price-unit">/ sessione</span></p>
+            <p class="price-note">Paghi solo quando ti alleni</p>
+            <ul class="price-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>60 minuti one-to-one in studio</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Riscaldamento e mobilità guidati</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Correzione tecnica su ogni esercizio</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Consigli per allenarti in autonomia</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#prenota" data-plan="Sessione singola">Prenota una sessione<span class="sr-only">: Sessione singola</span></a>
+          </article>
+
+          <article class="price-card price-card--featured reveal" aria-labelledby="plan-2">
+            <p class="price-badge"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg>Il più scelto</p>
+            <header class="price-head">
+              <h3 id="plan-2">Pacchetto 10 sessioni</h3>
+              <p class="price-desc">Per chi vuole risultati costanti, senza pensieri.</p>
+            </header>
+            <p class="price"><span class="price-cur">€</span><span class="price-val">420</span><span class="price-unit">/ 10 sessioni</span></p>
+            <p class="price-note"><strong>€42 a sessione</strong> · risparmi €80</p>
+            <ul class="price-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>10 sessioni one-to-one da 60 minuti</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Valutazione iniziale completa</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Programma personalizzato e aggiornato</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Supporto WhatsApp tra una sessione e l'altra</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Validità 4 mesi, orari flessibili</li>
+            </ul>
+            <a class="btn btn-lime btn-block" href="#prenota" data-plan="Pacchetto 10 sessioni">Scegli il pacchetto<span class="sr-only">: Pacchetto 10 sessioni</span></a>
+          </article>
+
+          <article class="price-card reveal" aria-labelledby="plan-3">
+            <header class="price-head">
+              <h3 id="plan-3">Coaching online</h3>
+              <p class="price-desc">Il mio metodo, ovunque ti alleni.</p>
+            </header>
+            <p class="price"><span class="price-cur">€</span><span class="price-val">89</span><span class="price-unit">/ mese</span></p>
+            <p class="price-note">Disdici quando vuoi</p>
+            <ul class="price-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Programma su misura, aggiornato ogni 4 settimane</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>App con video-tutorial di ogni esercizio</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Analisi video della tua tecnica</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Check-in settimanale e chat diretta</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Indicazioni alimentari pratiche</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#prenota" data-plan="Coaching online">Inizia online<span class="sr-only">: Coaching online</span></a>
+          </article>
+
+          <article class="price-card price-card--premium reveal" aria-labelledby="plan-4">
+            <p class="price-badge price-badge--orange">Premium</p>
+            <header class="price-head">
+              <h3 id="plan-4">Trasformazione 12 settimane</h3>
+              <p class="price-desc">Il percorso completo per cambiare davvero.</p>
+            </header>
+            <p class="price"><span class="price-cur">€</span><span class="price-val">890</span><span class="price-unit">/ percorso</span></p>
+            <p class="price-note">oppure <strong>3 rate da €297</strong></p>
+            <ul class="price-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>24 sessioni one-to-one, 2 a settimana</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Piano alimentare con nutrizionista partner</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Test e misurazioni ogni 4 settimane</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Priorità sugli orari serali</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Supporto WhatsApp 7 giorni su 7</li>
+            </ul>
+            <a class="btn btn-orange btn-block" href="#prenota" data-plan="Trasformazione 12 settimane">Voglio trasformarmi<span class="sr-only">: Trasformazione 12 settimane</span></a>
+          </article>
+        </div>
+
+        <p class="pricing-foot reveal">Prezzi IVA inclusa · Pagamento con carta, bancomat o bonifico · <strong>−10% se ti alleni in coppia</strong></p>
+      </div>
+    </section>
+
+    <!-- ============ TRASFORMAZIONI E RECENSIONI ============ -->
+    <section class="section results" id="trasformazioni" aria-labelledby="results-title">
+      <span class="section-bignum" aria-hidden="true">03</span>
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-num">03</span>Trasformazioni e recensioni</p>
+            <h2 class="section-title reveal" id="results-title">Risultati veri. <span class="text-lime">Persone normali.</span></h2>
+            <p class="section-lead reveal">Manager, genitori, studenti: nessuno di loro era un atleta. Tutti hanno seguito un metodo, con costanza.</p>
+          </div>
+          <div class="rating-box reveal">
+            <p class="rating-score">4,9<span>/5</span></p>
+            <p class="stars" role="img" aria-label="Valutazione media 4,9 su 5">
+              <svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg>
+            </p>
+            <p class="rating-count">su 127 recensioni verificate</p>
+          </div>
+        </div>
+
+        <div class="tf-grid">
+          <article class="tf-card reveal">
+            <div class="tf-media">
+              <img src="https://images.unsplash.com/photo-1571019613914-85f342c6a11e?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   width="800" height="533" loading="lazy" decoding="async" style="--pos: 0% 50%"
+                   alt="Giulia, in leggings arancioni, esegue un affondo con il bilanciere sulle spalle nella sala pesi">
+              <span class="tf-tag tf-tag--before">Prima</span>
+              <span class="tf-tag tf-tag--after">Dopo</span>
+            </div>
+            <div class="tf-body">
+              <p class="tf-result"><span class="tf-big">−9</span><span class="tf-unit">kg</span></p>
+              <p class="tf-time">in 14 settimane</p>
+              <dl class="tf-data">
+                <div><dt>Massa grassa</dt><dd>31% → 22%</dd></div>
+                <div><dt>Squat</dt><dd>20 → 70 kg</dd></div>
+              </dl>
+              <p class="tf-quote">«Nessuna dieta drastica. Ho solo smesso di improvvisare.»</p>
+              <p class="tf-name"><strong>Giulia R.</strong>, 34 anni · Trasformazione 12 settimane</p>
+            </div>
+          </article>
+
+          <article class="tf-card reveal">
+            <div class="tf-media">
+              <img src="https://images.unsplash.com/photo-1486218119243-13883505764c?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   width="800" height="533" loading="lazy" decoding="async" style="--pos: 60% 50%"
+                   alt="Stefano, di spalle, corre su una strada sterrata in aperta campagna con maglietta azzurra e pantaloncini neri">
+              <span class="tf-tag tf-tag--before">Prima</span>
+              <span class="tf-tag tf-tag--after">Dopo</span>
+            </div>
+            <div class="tf-body">
+              <p class="tf-result"><span class="tf-big">−12</span><span class="tf-unit">kg</span></p>
+              <p class="tf-time">in 16 settimane</p>
+              <dl class="tf-data">
+                <div><dt>Peso</dt><dd>94 → 82 kg</dd></div>
+                <div><dt>Girovita</dt><dd>−11 cm</dd></div>
+              </dl>
+              <p class="tf-quote">«Il mal di schiena è sparito e corro di nuovo con mio figlio.»</p>
+              <p class="tf-name"><strong>Stefano L.</strong>, 45 anni · Pacchetto 10 sessioni + online</p>
+            </div>
+          </article>
+
+          <article class="tf-card reveal">
+            <div class="tf-media">
+              <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                   width="800" height="1200" loading="lazy" decoding="async" style="--pos: 50% 35%"
+                   alt="Davide in palestra, a torso nudo, afferra con entrambe le mani le corde da battaglia (battle rope)">
+              <span class="tf-tag tf-tag--before">Prima</span>
+              <span class="tf-tag tf-tag--after">Dopo</span>
+            </div>
+            <div class="tf-body">
+              <p class="tf-result"><span class="tf-big">+6</span><span class="tf-unit">kg</span></p>
+              <p class="tf-time">di massa magra in 20 settimane</p>
+              <dl class="tf-data">
+                <div><dt>Stacco</dt><dd>90 → 160 kg</dd></div>
+                <div><dt>Panca</dt><dd>60 → 95 kg</dd></div>
+              </dl>
+              <p class="tf-quote">«Finalmente un programma che progredisce davvero.»</p>
+              <p class="tf-name"><strong>Davide M.</strong>, 27 anni · Coaching online</p>
+            </div>
+          </article>
+        </div>
+        <p class="tf-disclaimer">I risultati variano da persona a persona e dipendono da costanza, alimentazione e punto di partenza.</p>
+
+        <h3 class="reviews-title reveal">Cosa dicono di me</h3>
+        <div class="reviews">
+          <figure class="review reveal">
+            <p class="stars" role="img" aria-label="5 stelle su 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></p>
+            <blockquote><p>Avevo provato tre palestre e due app. Con Marco, per la prima volta, ho un programma che riesco a seguire davvero: in quattro mesi ho perso 7 kg e il mal di schiena da scrivania è sparito.</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">FB</span><span><strong>Francesca B.</strong><span class="review-meta">Avvocata · Pacchetto 10 sessioni</span></span></figcaption>
+          </figure>
+
+          <figure class="review reveal">
+            <p class="stars" role="img" aria-label="5 stelle su 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></p>
+            <blockquote><p>Sessioni intense ma mai improvvisate. Spiega il perché di ogni esercizio e corregge la tecnica al millimetro. Il mio squat è passato da 80 a 140 kg senza un solo infortunio.</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">LT</span><span><strong>Luca T.</strong><span class="review-meta">Ingegnere · Coaching online</span></span></figcaption>
+          </figure>
+
+          <figure class="review reveal">
+            <p class="stars" role="img" aria-label="5 stelle su 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></p>
+            <blockquote><p>Dopo la gravidanza non sapevo da dove ripartire. Marco ha costruito un percorso graduale, con tanta pazienza e zero giudizio. Oggi mi sento più forte di prima.</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">CP</span><span><strong>Chiara P.</strong><span class="review-meta">Insegnante · Trasformazione 12 settimane</span></span></figcaption>
+          </figure>
+
+          <figure class="review reveal">
+            <p class="stars" role="img" aria-label="5 stelle su 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></p>
+            <blockquote><p>Viaggio spesso per lavoro e il coaching online è perfetto: allenamenti adattati alla palestra dell'hotel, check ogni settimana e risposte rapidissime su WhatsApp.</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">AS</span><span><strong>Andrea S.</strong><span class="review-meta">Consulente · Coaching online</span></span></figcaption>
+          </figure>
+
+          <figure class="review reveal">
+            <p class="stars" role="img" aria-label="4 stelle su 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg class="star-off" aria-hidden="true"><use href="#i-star"/></svg></p>
+            <blockquote><p>Preparato, puntuale e motivante, lo studio è curato e mai affollato. Unico consiglio: gli orari serali vanno a ruba, conviene prenotare con qualche giorno di anticipo.</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">MV</span><span><strong>Martina V.</strong><span class="review-meta">Architetta · Sessioni singole</span></span></figcaption>
+          </figure>
+
+          <figure class="review reveal">
+            <p class="stars" role="img" aria-label="5 stelle su 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></p>
+            <blockquote><p>A 58 anni pensavo fosse tardi per iniziare. Mi sbagliavo: più mobilità, più energia e finalmente niente dolori al ginocchio quando salgo le scale. Consigliatissimo.</p></blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">RC</span><span><strong>Roberto C.</strong><span class="review-meta">Commercialista · Pacchetto 10 sessioni</span></span></figcaption>
+          </figure>
+        </div>
+
+        <aside class="cta-band reveal" aria-labelledby="cta-band-title">
+          <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&amp;fit=crop&amp;w=1600&amp;q=75"
+               width="1600" height="1067" loading="lazy" decoding="async" alt="">
+          <div class="cta-band-inner">
+            <p class="cta-band-title" id="cta-band-title">Il prossimo “prima e dopo” <span class="text-lime">può essere il tuo.</span></p>
+            <a class="btn btn-lime btn-lg" href="#prenota">Prenota la prima sessione <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ PRENOTAZIONE ============ -->
+    <section class="section booking" id="prenota" aria-labelledby="booking-title">
+      <span class="section-bignum" aria-hidden="true">04</span>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span class="eyebrow-num">04</span>Prenotazione</p>
+          <h2 class="section-title reveal" id="booking-title">Prenota la tua <span class="text-lime">prima sessione.</span></h2>
+          <p class="section-lead reveal">Scegli giorno e orario. La prima sessione dura 60 minuti e include valutazione posturale, test di forza e definizione degli obiettivi. <strong>È gratuita e senza impegno.</strong></p>
+        </div>
+
+        <div class="booking-wrap">
+          <form class="booking-form" id="booking-form" novalidate>
+            <div class="booking-grid">
+              <!-- STEP 1: calendario -->
+              <fieldset class="panel cal" aria-describedby="err-slot">
+                <legend class="panel-title"><span class="step">1</span>Scegli giorno e orario</legend>
+
+                <div class="cal-head">
+                  <p class="cal-month" id="cal-month">Prossimi 14 giorni</p>
+                  <ul class="cal-legend" aria-hidden="true">
+                    <li><span class="dot dot--free"></span>Libero</li>
+                    <li><span class="dot dot--busy"></span>Occupato</li>
+                    <li><span class="dot dot--sel"></span>Selezionato</li>
+                  </ul>
+                </div>
+
+                <fieldset class="cal-group">
+                  <legend class="sr-only">Giorno</legend>
+                  <div class="days" id="cal-days">
+                    <p class="cal-noscript">Attiva JavaScript per vedere il calendario, oppure scrivimi su WhatsApp.</p>
+                  </div>
+                </fieldset>
+
+                <fieldset class="cal-group">
+                  <legend class="cal-sub" id="slots-legend">Orari disponibili</legend>
+                  <div class="slots" id="cal-slots"></div>
+                </fieldset>
+
+                <div class="cal-summary">
+                  <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+                  <p id="booking-summary" aria-live="polite">Seleziona un giorno e un orario.</p>
+                </div>
+                <p class="field-error" id="err-slot"></p>
+
+                <ul class="cal-info">
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Conferma personale su WhatsApp entro 24 ore</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Puoi spostare o disdire gratis fino a 24 ore prima</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Porta scarpe pulite, asciugamano e borraccia</li>
+                </ul>
+              </fieldset>
+
+              <!-- STEP 2: dati -->
+              <fieldset class="panel details">
+                <legend class="panel-title"><span class="step">2</span>I tuoi dati</legend>
+                <p class="req-note">I campi con <span aria-hidden="true">*</span><span class="sr-only">asterisco</span> sono obbligatori.</p>
+
+                <div class="field">
+                  <label for="f-nome">Nome e cognome <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" id="f-nome" name="nome" autocomplete="name" required aria-describedby="err-nome">
+                  <p class="field-error" id="err-nome"></p>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+                    <input type="email" id="f-email" name="email" autocomplete="email" inputmode="email" required aria-describedby="err-email">
+                    <p class="field-error" id="err-email"></p>
+                  </div>
+                  <div class="field">
+                    <label for="f-tel">Telefono <span class="req" aria-hidden="true">*</span></label>
+                    <input type="tel" id="f-tel" name="telefono" autocomplete="tel" inputmode="tel" required aria-describedby="hint-tel err-tel">
+                    <p class="field-hint" id="hint-tel">Ti invio la conferma su WhatsApp.</p>
+                    <p class="field-error" id="err-tel"></p>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label for="f-obiettivo">Obiettivo principale <span class="req" aria-hidden="true">*</span></label>
+                    <div class="select-wrap">
+                      <select id="f-obiettivo" name="obiettivo" required aria-describedby="err-obiettivo">
+                        <option value="">Seleziona un obiettivo</option>
+                        <option>Perdere peso</option>
+                        <option>Aumentare la massa muscolare</option>
+                        <option>Tonificare e rimettermi in forma</option>
+                        <option>Migliorare postura e dolori</option>
+                        <option>Preparazione atletica per uno sport</option>
+                        <option>Altro</option>
+                      </select>
+                    </div>
+                    <p class="field-error" id="err-obiettivo"></p>
+                  </div>
+                  <div class="field">
+                    <label for="f-servizio">Servizio di interesse</label>
+                    <div class="select-wrap">
+                      <select id="f-servizio" name="servizio">
+                        <option>Prima sessione gratuita</option>
+                        <option>Sessione singola</option>
+                        <option>Pacchetto 10 sessioni</option>
+                        <option>Coaching online</option>
+                        <option>Trasformazione 12 settimane</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="f-note">Note <span class="optional">(facoltative)</span></label>
+                  <textarea id="f-note" name="note" rows="3" maxlength="500" aria-describedby="note-count" placeholder="Infortuni, esperienza, preferenze…"></textarea>
+                  <p class="field-hint field-hint--right" id="note-count">0/500 caratteri</p>
+                </div>
+
+                <div class="field field--check">
+                  <input type="checkbox" id="f-privacy" name="privacy" required aria-describedby="err-privacy">
+                  <label for="f-privacy">Acconsento al trattamento dei dati per essere ricontattato, come da <a href="#">informativa privacy</a>. <span class="req" aria-hidden="true">*</span></label>
+                  <p class="field-error" id="err-privacy"></p>
+                </div>
+
+                <button class="btn btn-lime btn-lg btn-block" type="submit">
+                  Conferma la prenotazione
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </button>
+                <p class="form-status" id="form-status" role="alert"></p>
+                <p class="form-note">Sito dimostrativo: nessun dato viene inviato o salvato.</p>
+              </fieldset>
+            </div>
+          </form>
+
+          <div class="booking-success panel" id="booking-success" hidden>
+            <span class="success-icon" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
+            <h3 class="success-title" id="success-title" tabindex="-1">Prenotazione ricevuta!</h3>
+            <p class="success-lead">Grazie <strong data-out="nome"></strong>, ci vediamo <strong class="text-lime" data-out="quando"></strong>.</p>
+            <dl class="success-recap">
+              <div><dt>Data e ora</dt><dd data-out="quando-full"></dd></div>
+              <div><dt>Servizio</dt><dd data-out="servizio"></dd></div>
+              <div><dt>Obiettivo</dt><dd data-out="obiettivo"></dd></div>
+              <div><dt>Contatti</dt><dd><span data-out="email"></span><br><span data-out="telefono"></span></dd></div>
+            </dl>
+            <p>Riceverai una conferma su WhatsApp entro 24 ore. Porta scarpe pulite, un asciugamano e una borraccia: al resto penso io.</p>
+            <p class="form-note">Sito dimostrativo: nessun dato è stato inviato.</p>
+            <button class="btn btn-outline" type="button" id="booking-reset">Prenota un'altra sessione</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATTI ============ -->
+    <section class="section contact" id="contatti" aria-labelledby="contact-title">
+      <span class="section-bignum" aria-hidden="true">05</span>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span class="eyebrow-num">05</span>Contatti</p>
+          <h2 class="section-title reveal" id="contact-title">Vieni a trovarmi <span class="text-lime">in studio.</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <ul class="contact-list">
+              <li>
+                <span class="contact-ico" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
+                <div>
+                  <h3>Studio</h3>
+                  <address>Via dei Pesi 12, 00192 Roma<br>Zona Prati · a 5 minuti a piedi dalla metro A</address>
+                </div>
+              </li>
+              <li>
+                <span class="contact-ico" aria-hidden="true"><svg><use href="#i-clock"/></svg></span>
+                <div>
+                  <h3>Orari</h3>
+                  <dl class="hours">
+                    <div><dt>Lunedì – Venerdì</dt><dd>07:00 – 21:00</dd></div>
+                    <div><dt>Sabato</dt><dd>08:00 – 13:00</dd></div>
+                    <div><dt>Domenica</dt><dd>Chiuso</dd></div>
+                  </dl>
+                </div>
+              </li>
+              <li>
+                <span class="contact-ico" aria-hidden="true"><svg><use href="#i-mail"/></svg></span>
+                <div>
+                  <h3>Scrivimi</h3>
+                  <p><a href="mailto:info@marcoferricoaching.example">info@marcoferricoaching.example</a><br>
+                  <a href="tel:+390000000000">+39 000 000 0000</a></p>
+                </div>
+              </li>
+            </ul>
+
+            <a class="btn-wa-big" href="https://wa.me/390000000000?text=Ciao%20Marco!%20Vorrei%20informazioni%20sulla%20prima%20sessione%20di%20prova." target="_blank" rel="noopener">
+              <svg class="btn-wa-ico" aria-hidden="true"><use href="#i-wa"/></svg>
+              <span class="btn-wa-text">
+                <strong>Scrivimi su WhatsApp</strong>
+                <span>+39 000 000 0000 · rispondo entro poche ore</span>
+              </span>
+              <svg class="icon btn-wa-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+              <span class="sr-only"> (si apre in una nuova scheda)</span>
+            </a>
+
+            <div class="socials">
+              <p class="socials-label">Seguimi</p>
+              <ul>
+                <li><a href="#" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a></li>
+                <li><a href="#" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a></li>
+                <li><a href="#" aria-label="YouTube"><svg aria-hidden="true"><use href="#i-yt"/></svg></a></li>
+                <li><a href="#" aria-label="TikTok"><svg aria-hidden="true"><use href="#i-tt"/></svg></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <figure class="map reveal">
+            <div class="map-frame">
+              <iframe
+                title="Mappa della zona Prati a Roma, dove si trova lo studio"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=12.4520%2C41.9000%2C12.4720%2C41.9140&amp;layer=mapnik"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <figcaption>Mappa indicativa della zona · <a href="https://www.openstreetmap.org/#map=16/41.9070/12.4620" class="osm-link" target="_blank" rel="noopener">Apri su OpenStreetMap<span class="sr-only"> (si apre in una nuova scheda)</span></a></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Marco Ferri Coaching, torna all'inizio">
+          <span class="brand-mark" aria-hidden="true">MF</span>
+          <span class="brand-name">Marco Ferri <span>Coaching</span></span>
+        </a>
+        <p>Personal training one-to-one a Roma Prati e coaching online.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Link del footer">
+        <ul>
+          <li><a href="#chi-sono">Chi sono</a></li>
+          <li><a href="#servizi">Servizi e prezzi</a></li>
+          <li><a href="#trasformazioni">Trasformazioni</a></li>
+          <li><a href="#prenota">Prenota</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Marco Ferri Coaching · P.IVA 00000000000</p>
+      <p class="demo-note">Sito dimostrativo · contenuti e nomi di fantasia · Realizzato da <strong>Alessio Fantini</strong> · <a href="../">← Tutte le demo</a></p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/390000000000?text=Ciao%20Marco!%20Vorrei%20informazioni%20sulla%20prima%20sessione%20di%20prova." target="_blank" rel="noopener" aria-label="Scrivi a Marco su WhatsApp (si apre in una nuova scheda)">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+</body>
+</html>
