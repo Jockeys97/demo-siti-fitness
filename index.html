@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
   <meta property="og:title" content="Demo · Siti per PT e palestre · Alessio Fantini">
-  <meta property="og:description" content="Due siti dimostrativi per il mondo fitness: un personal trainer e una palestra di quartiere.">
+  <meta property="og:description" content="Tre siti dimostrativi per il mondo fitness: un personal trainer, uno studio boutique di personal training e una palestra di quartiere.">
   <meta property="og:url" content="https://jockeys97.github.io/demo-siti-fitness/">
   <meta property="og:image" content="https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=1200&h=630&q=75">
   <meta name="twitter:card" content="summary_large_image">
@@ -30,6 +30,7 @@
       --line: rgba(242, 239, 233, .12);
       --pt: #c6ff3d;
       --gym: #ff5b1f;
+      --studio: #e7b48f;
       --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
       --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       --gutter: clamp(20px, 5vw, 56px);
@@ -143,6 +144,7 @@
     }
     .demo--pt { --accent: var(--pt); }
     .demo--gym { --accent: var(--gym); }
+    .demo--studio { --accent: var(--studio); }
     .demo:hover {
       transform: translateY(-4px);
       border-color: rgba(242, 239, 233, .28);
@@ -213,6 +215,17 @@
     .demo__cta svg { width: 18px; height: 18px; transition: transform .3s var(--ease); }
     .demo:hover .demo__cta svg { transform: translateX(4px); }
     .demo__cta span { border-bottom: 1px solid var(--accent); padding-bottom: 1px; }
+
+    @media (min-width: 52em) {
+      .demo--studio { grid-column: 1 / -1; flex-direction: row; }
+      .demo--studio .demo__media { flex: 0 0 50%; aspect-ratio: auto; }
+      .demo--studio .demo__body { min-width: 0; }
+    }
+    @media (min-width: 72em) {
+      .demos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .demo--studio { grid-column: auto; flex-direction: column; }
+      .demo--studio .demo__media { flex: none; aspect-ratio: 16 / 10; }
+    }
 
     .included { padding-block: clamp(2.5rem, 6vw, 4rem); border-top: 1px solid var(--line); }
     .included h2 {
@@ -291,6 +304,22 @@
           <p class="demo__text">Il sito di una palestra di quartiere: struttura e staff, orario dei corsi filtrabile, abbonamenti e prova gratuita.</p>
           <ul class="demo__tags" aria-label="Contenuti">
             <li>Orario corsi</li><li>Abbonamenti</li><li>Prova gratuita</li>
+          </ul>
+          <p class="demo__cta" aria-hidden="true"><span>Apri la demo</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15M13 6l6 6-6 6"/></svg></p>
+        </div>
+      </article>
+
+      <article class="demo demo--studio">
+        <div class="demo__media">
+          <span class="demo__num" aria-hidden="true">03</span>
+          <img src="./pt-studio/assets/img/card-landing.jpg" width="900" height="560" loading="lazy" decoding="async" alt="Coach e cliente in uno studio di personal training luminoso e accogliente">
+        </div>
+        <div class="demo__body">
+          <p class="demo__kind">Personal trainer · studio boutique</p>
+          <h2><a href="./pt-studio/">Studio Lume<span class="sub">— sito per studio di personal training</span></a></h2>
+          <p class="demo__text">Uno studio boutique dal look luminoso: percorsi su misura, prezzi trasparenti e un calendario interattivo per prenotare la prima sessione.</p>
+          <ul class="demo__tags" aria-label="Contenuti">
+            <li>Calendario prenotazioni</li><li>Prezzi chiari</li><li>Recensioni</li>
           </ul>
           <p class="demo__cta" aria-hidden="true"><span>Apri la demo</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15M13 6l6 6-6 6"/></svg></p>
         </div>
