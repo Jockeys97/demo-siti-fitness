@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo · Siti per PT e palestre · Alessio Fantini</title>
+  <meta name="description" content="Siti dimostrativi per personal trainer e palestre realizzati da Alessio Fantini: veloci, curati, mobile-first e pensati per trasformare le visite in richieste di contatto.">
+  <meta name="theme-color" content="#0e0e10">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Demo · Siti per PT e palestre · Alessio Fantini">
+  <meta property="og:description" content="Due siti dimostrativi per il mondo fitness: un personal trainer e una palestra di quartiere.">
+  <meta property="og:url" content="https://jockeys97.github.io/demo-siti-fitness/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=1200&h=630&q=75">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0e10'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23f2efe9'%3EAF%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0e0e10;
+      --bg-2: #151518;
+      --fg: #f2efe9;
+      --muted: #a3a09a;
+      --line: rgba(242, 239, 233, .12);
+      --pt: #c6ff3d;
+      --gym: #ff5b1f;
+      --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+      --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --gutter: clamp(20px, 5vw, 56px);
+      --ease: cubic-bezier(.2, .7, .2, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background-repeat: no-repeat, no-repeat, repeat;
+      background-image:
+        radial-gradient(1200px 600px at 85% -10%, rgba(255, 255, 255, .06), transparent 60%),
+        radial-gradient(900px 500px at -10% 110%, rgba(255, 255, 255, .04), transparent 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    h1, h2, p, ul { margin: 0; }
+    ul { padding: 0; list-style: none; }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid var(--fg); outline-offset: 4px; border-radius: 2px; }
+
+    .wrap { width: min(100% - 2 * var(--gutter), 1160px); margin-inline: auto; }
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-block: 1.75rem;
+      border-bottom: 1px solid var(--line);
+      font-size: .875rem;
+    }
+    .top__name { font-family: var(--serif); font-size: 1.5rem; font-style: italic; letter-spacing: .01em; }
+    .top__tag {
+      padding: .3em .8em;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: .75rem;
+    }
+
+    main { flex: 1; }
+
+    .intro { padding-block: clamp(3.5rem, 10vw, 7rem) clamp(2.5rem, 6vw, 4.5rem); }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      margin-bottom: 1.5rem;
+      font-size: .8125rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .eyebrow::before { content: ""; width: 32px; height: 1px; background: currentColor; }
+    h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2.75rem, 8vw, 5.5rem);
+      line-height: 1;
+      letter-spacing: -.015em;
+      text-wrap: balance;
+      max-width: 11em;
+    }
+    h1 em { color: var(--muted); }
+    .intro p {
+      margin-top: 1.75rem;
+      max-width: 40rem;
+      font-size: clamp(1.0625rem, 1.6vw, 1.1875rem);
+      color: var(--muted);
+      text-wrap: pretty;
+    }
+    .intro p strong { color: var(--fg); font-weight: 500; }
+
+    .demos {
+      display: grid;
+      gap: clamp(1.25rem, 3vw, 2rem);
+      padding-bottom: clamp(3.5rem, 8vw, 6rem);
+    }
+    @media (min-width: 52em) { .demos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+    .demo {
+      --accent: var(--fg);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-2);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform .5s var(--ease), border-color .4s, box-shadow .5s var(--ease);
+    }
+    .demo--pt { --accent: var(--pt); }
+    .demo--gym { --accent: var(--gym); }
+    .demo:hover {
+      transform: translateY(-4px);
+      border-color: rgba(242, 239, 233, .28);
+      box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .8);
+    }
+    .demo:focus-within { border-color: rgba(242, 239, 233, .5); }
+    .demo__media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #1c1c20; }
+    .demo__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(.75) brightness(.85);
+      transition: transform 1s var(--ease), filter .6s;
+    }
+    .demo:hover .demo__media img { transform: scale(1.04); filter: saturate(1) brightness(.95); }
+    .demo__media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(21, 21, 24, .85));
+    }
+    .demo__num {
+      position: absolute;
+      top: 1rem;
+      left: 1.25rem;
+      z-index: 1;
+      font-family: var(--serif);
+      font-size: 1.125rem;
+      font-style: italic;
+      color: var(--fg);
+    }
+    .demo__body { display: flex; flex-direction: column; gap: .9rem; padding: 1.5rem 1.5rem 1.75rem; flex: 1; }
+    .demo__kind {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .demo__kind::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+    .demo h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.75rem, 3.4vw, 2.25rem); line-height: 1.1; }
+    .demo h2 a { text-decoration: none; }
+    .demo h2 a::after { content: ""; position: absolute; inset: 0; z-index: 2; border-radius: 14px; }
+    .demo h2 a:focus-visible { outline: none; }
+    .demo h2 a:focus-visible::after { outline: 2px solid var(--fg); outline-offset: -2px; }
+    .demo h2 .sub { display: block; font-family: var(--sans); font-size: 1rem; color: var(--muted); margin-top: .35rem; letter-spacing: 0; }
+    .demo__text { color: var(--muted); font-size: .9375rem; }
+    .demo__tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+    .demo__tags li {
+      padding: .25em .7em;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: .75rem;
+      color: var(--muted);
+    }
+    .demo__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      margin-top: auto;
+      padding-top: .5rem;
+      font-weight: 500;
+      font-size: .9375rem;
+    }
+    .demo__cta svg { width: 18px; height: 18px; transition: transform .3s var(--ease); }
+    .demo:hover .demo__cta svg { transform: translateX(4px); }
+    .demo__cta span { border-bottom: 1px solid var(--accent); padding-bottom: 1px; }
+
+    .included { padding-block: clamp(2.5rem, 6vw, 4rem); border-top: 1px solid var(--line); }
+    .included h2 {
+      margin-bottom: 1.75rem;
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+      line-height: 1.1;
+    }
+    .features { display: grid; gap: 1.5rem 2rem; }
+    @media (min-width: 40em) { .features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (min-width: 64em) { .features { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+    .features li { padding-top: 1rem; border-top: 1px solid var(--line); }
+    .features strong { display: block; font-weight: 500; margin-bottom: .25rem; }
+    .features span { color: var(--muted); font-size: .9375rem; }
+
+    footer {
+      padding-block: 2rem 2.5rem;
+      border-top: 1px solid var(--line);
+      font-size: .8125rem;
+      color: var(--muted);
+    }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap top">
+    <span class="top__name">Alessio Fantini</span>
+    <span class="top__tag">Demo</span>
+  </header>
+
+  <main>
+    <section class="wrap intro" aria-labelledby="titolo">
+      <p class="eyebrow">Siti per PT e palestre</p>
+      <h1 id="titolo">Siti per personal trainer <em>e palestre</em></h1>
+      <p>Questi sono <strong>siti dimostrativi realizzati da Alessio Fantini</strong> per mostrare come può essere il sito di un'attività fitness: veloce, curato nei dettagli, perfetto da smartphone e pensato per trasformare le visite in richieste di prova. Nomi, testi, prezzi e recensioni sono di fantasia.</p>
+    </section>
+
+    <section class="wrap demos" aria-label="Siti dimostrativi">
+      <article class="demo demo--pt">
+        <div class="demo__media">
+          <span class="demo__num" aria-hidden="true">01</span>
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&h=560&q=75"
+            srcset="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&h=375&q=75 600w,
+                    https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&h=560&q=75 900w"
+            sizes="(min-width: 52em) 50vw, 100vw"
+            width="900" height="560" alt="Atleta che solleva un bilanciere da terra in una palestra, inquadratura sulle gambe e sui dischi">
+        </div>
+        <div class="demo__body">
+          <p class="demo__kind">Personal trainer</p>
+          <h2><a href="./pt/">Marco Ferri Coaching<span class="sub">— sito per personal trainer</span></a></h2>
+          <p class="demo__text">Il sito di un personal trainer: metodo, percorsi, risultati dei clienti e prenotazione della prima consulenza.</p>
+          <ul class="demo__tags" aria-label="Contenuti">
+            <li>Percorsi e prezzi</li><li>Testimonianze</li><li>Prenotazione</li>
+          </ul>
+          <p class="demo__cta" aria-hidden="true"><span>Apri la demo</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15M13 6l6 6-6 6"/></svg></p>
+        </div>
+      </article>
+
+      <article class="demo demo--gym">
+        <div class="demo__media">
+          <span class="demo__num" aria-hidden="true">02</span>
+          <img src="https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=900&h=560&q=75"
+            srcset="https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=600&h=375&q=75 600w,
+                    https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=900&h=560&q=75 900w"
+            sizes="(min-width: 52em) 50vw, 100vw"
+            width="900" height="560" loading="lazy" decoding="async" alt="Sala pesi in un capannone industriale con lucernari, rack e panche">
+        </div>
+        <div class="demo__body">
+          <p class="demo__kind">Palestra</p>
+          <h2><a href="./palestra/">Forgia Fitness Club<span class="sub">— sito per palestra</span></a></h2>
+          <p class="demo__text">Il sito di una palestra di quartiere: struttura e staff, orario dei corsi filtrabile, abbonamenti e prova gratuita.</p>
+          <ul class="demo__tags" aria-label="Contenuti">
+            <li>Orario corsi</li><li>Abbonamenti</li><li>Prova gratuita</li>
+          </ul>
+          <p class="demo__cta" aria-hidden="true"><span>Apri la demo</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15M13 6l6 6-6 6"/></svg></p>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap included" aria-labelledby="incluso">
+      <h2 id="incluso">In ogni sito</h2>
+      <ul class="features">
+        <li><strong>Mobile-first</strong><span>Pensato prima per lo smartphone, perfetto anche su desktop.</span></li>
+        <li><strong>Contatto immediato</strong><span>WhatsApp, chiamata e modulo sempre a portata di pollice.</span></li>
+        <li><strong>Veloce e accessibile</strong><span>Codice leggero, immagini ottimizzate, navigazione da tastiera.</span></li>
+        <li><strong>Zero canoni</strong><span>Sito statico: nessuna piattaforma a pagamento da mantenere.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Siti dimostrativi realizzati da Alessio Fantini</p>
+      <p>Contenuti e nomi di fantasia · Foto: Unsplash</p>
+    </div>
+  </footer>
+</body>
+</html>

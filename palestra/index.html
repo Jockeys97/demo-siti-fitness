@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="it" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forgia Fitness Club · Palestra a Roma — sala pesi, corsi e prova gratuita</title>
+  <meta name="description" content="Forgia Fitness Club è la palestra di quartiere a Roma: 600 mq tra sala pesi, area functional e sala corsi, coach sempre in sala e 31 corsi a settimana. Prova gratis per un giorno.">
+  <meta name="theme-color" content="#14100d">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Forgia Fitness Club">
+  <meta property="og:title" content="Forgia Fitness Club · Palestra di quartiere a Roma">
+  <meta property="og:description" content="Sala pesi, area functional, 31 corsi a settimana e coach che ti chiamano per nome. Il primo giorno lo offriamo noi.">
+  <meta property="og:url" content="https://jockeys97.github.io/demo-siti-fitness/palestra/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=1200&h=630&q=75">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sala pesi della palestra in un capannone industriale con lucernari">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%2314100d'/%3E%3Cpath d='M5 15H34L44 16.5L34 21.5H29.5V26.5L34.5 33V38H13.5V33L18.5 26.5V21.5H9.5L5 18.5Z' fill='%23ff5b1f'/%3E%3Cpath d='M20 6.5l2 4.5M27 5.5l-1 5M13.5 8l3 3.5' stroke='%23f4ecdd' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Big+Shoulders+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <!-- Icone SVG riutilizzabili -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-anvil" viewBox="0 0 48 48"><path d="M3 14H34L45 15.8L34 21.5H29.5V26.5L34.5 33V38H13.5V33L18.5 26.5V21.5H8.5L3 17.5Z" fill="currentColor"/><path d="M20 4.5l2 5M27.5 3.5l-1 5.5M13 6.5l3.2 3.8" stroke="var(--spark, currentColor)" stroke-width="2.4" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2.2A9.8 9.8 0 0 0 3.6 17l-1.4 4.8 4.9-1.3A9.8 9.8 0 1 0 12 2.2z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M8.7 7.3c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .6.5.9 1.2 1.6 2.1 2.1.3.2.4.1.6 0l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.2.4.4 0 .6-.2 1.4-.8 1.8-.6.4-1.4.6-2.3.3-1.2-.4-2.6-1.1-3.8-2.3-1.2-1.2-2-2.6-2.3-3.7-.3-1 0-1.9.4-2.5z" fill="currentColor"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l4.8 4.8L19.5 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9.5" r="2.6" fill="currentColor"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6.4 6.4l1.5-2.3 4.6 1.8V19a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5.3l3.5 2.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 6 6.5.7-4.9 4.4 1.4 6.4L12 17l-5.8 3.3 1.4-6.4-4.9-4.4 6.5-.7z" fill="currentColor"/></symbol>
+    <symbol id="i-shower" viewBox="0 0 24 24"><path d="M4 21V7a4 4 0 0 1 4-4h1a4 4 0 0 1 4 4M9.5 9.5h7a3.5 3.5 0 0 0-7 0zM11 13v1.5M14 13v1.5M17 13v1.5M12.5 17v1.5M15.5 17v1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3M12 14.5v2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0M5.8 12.5a9.2 9.2 0 0 1 12.4 0M9.1 16a4.6 4.6 0 0 1 5.8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="19.3" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 2.5v19M3.8 7.2l16.4 9.6M3.8 16.8l16.4-9.6M9 4.5l3 2.5 3-2.5M9 19.5l3-2.5 3 2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bike" viewBox="0 0 24 24"><circle cx="5.5" cy="16.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18.5" cy="16.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5.5 16.5l4-7.5h6.5l2.5 7.5M9.5 9l3.5 7.5h-7.5M13 6h3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6.5 7 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 10 12 3 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 14.5a3 3 0 0 0 3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Forgia Fitness Club, torna all'inizio">
+        <svg class="brand__mark" aria-hidden="true" focusable="false"><use href="#i-anvil"/></svg>
+        <span class="brand__text">
+          <span class="brand__name">Forgia</span>
+          <span class="brand__sub">Fitness Club</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigazione principale">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+          <span class="nav__toggle-box" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <div class="nav__panel" id="nav-panel">
+          <ul class="nav__list">
+            <li><a href="#struttura"><span class="nav__num" aria-hidden="true">01</span>Struttura</a></li>
+            <li><a href="#staff"><span class="nav__num" aria-hidden="true">02</span>Staff</a></li>
+            <li><a href="#orari"><span class="nav__num" aria-hidden="true">03</span>Orari</a></li>
+            <li><a href="#abbonamenti"><span class="nav__num" aria-hidden="true">04</span>Abbonamenti</a></li>
+            <li class="nav__item--trial"><a href="#prova"><span class="nav__num" aria-hidden="true">05</span>Prova gratuita</a></li>
+            <li><a href="#contatti"><span class="nav__num" aria-hidden="true">06</span>Contatti</a></li>
+          </ul>
+          <a class="btn btn--fire nav__cta" href="#prova">Prova gratis</a>
+          <p class="nav__meta">Via dell'Incudine 27, Roma · Aperti 7/7</p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto" tabindex="-1">
+
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <picture>
+          <source media="(max-width: 47.99em)"
+            srcset="https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=720&h=1100&q=75 720w,
+                    https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=1080&h=1650&q=75 1080w"
+            sizes="100vw">
+          <img
+            src="https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=1600&q=75"
+            srcset="https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=1280&q=75 1280w,
+                    https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=1600&q=75 1600w,
+                    https://images.unsplash.com/photo-1623874514711-0f321325f318?auto=format&fit=crop&w=2200&q=75 2200w"
+            sizes="100vw"
+            width="1600" height="1067"
+            alt="La sala pesi della palestra: un capannone industriale con travi in acciaio, lucernari, rack, panche e pedane su pavimento in gomma"
+            fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--hero"><span class="eyebrow__bar" aria-hidden="true"></span>Palestra di quartiere · Roma</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__line">Qui si</span>
+          <span class="hero__line hero__line--fire">forgia</span>
+          <span class="hero__line">la tua forza.</span>
+        </h1>
+        <p class="hero__lead">600&nbsp;mq tra sala pesi, area functional e sala corsi. Coach sempre in sala, lezioni a numero chiuso e l'atmosfera di una palestra vera: niente fronzoli, solo lavoro fatto bene.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--fire btn--lg" href="#prova">Prova gratis 1 giorno <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="https://wa.me/390000000000?text=Ciao%20Forgia!%20Vorrei%20informazioni%20sulla%20prova%20gratuita." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg> Scrivici su WhatsApp<span class="sr-only"> (si apre in una nuova scheda)</span>
+          </a>
+        </div>
+        <ul class="hero__badges" aria-label="In breve">
+          <li class="badge badge--fire">Aperti 7/7</li>
+          <li class="badge">600&nbsp;mq</li>
+          <li class="badge">Max 14 persone per corso</li>
+        </ul>
+      </div>
+
+      <div class="hero__stamp" aria-hidden="true">
+        <svg viewBox="0 0 200 200" class="hero__stamp-ring">
+          <defs><path id="stamp-circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#stamp-circle" startOffset="0">PRIMA PROVA GRATUITA · SENZA VINCOLI · </textPath></text>
+        </svg>
+        <svg class="hero__stamp-icon"><use href="#i-anvil"/></svg>
+      </div>
+
+      <div class="hero__stats">
+        <dl class="container stats">
+          <div class="stats__item"><dt>Corsi a settimana</dt><dd>31</dd></div>
+          <div class="stats__item"><dt>Coach certificati</dt><dd>4</dd></div>
+          <div class="stats__item"><dt>Rack olimpionici</dt><dd>6</dd></div>
+          <div class="stats__item"><dt>Voto medio dei soci</dt><dd>4,9<small>/5</small></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__band">
+        <div class="ticker__track">
+          <span>Forza</span><span>Resistenza</span><span>Tecnica</span><span>Comunità</span><span>Costanza</span><span>Sudore</span>
+          <span>Forza</span><span>Resistenza</span><span>Tecnica</span><span>Comunità</span><span>Costanza</span><span>Sudore</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1. STRUTTURA -->
+    <section class="section theme-light" id="struttura" aria-labelledby="struttura-title">
+      <span class="section__bignum" aria-hidden="true">01</span>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">01</span>La struttura</p>
+          <h2 class="section__title" id="struttura-title">600&nbsp;mq. Zero fronzoli, tutto quello che serve.</h2>
+          <p class="section__lead">Un ex capannone artigiano ristrutturato nel cuore del quartiere: soffitti alti, luce naturale e attrezzatura professionale. Ogni area è pensata per un modo diverso di allenarsi.</p>
+        </header>
+
+        <div class="areas">
+          <article class="area reveal">
+            <div class="area__media">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&h=675&q=75"
+                srcset="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&h=450&q=75 600w,
+                        https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&h=675&q=75 900w,
+                        https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1300&h=975&q=75 1300w"
+                sizes="(min-width: 64em) 58vw, (min-width: 40em) 50vw, 100vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="Lunga rastrelliera di manubri in primo piano, sullo sfondo una ragazza si allena tra panche e macchine">
+              <span class="area__num" aria-hidden="true">01</span>
+            </div>
+            <div class="area__body">
+              <h3 class="area__title">Sala pesi</h3>
+              <p>Il cuore della Forgia. Rack olimpionici, pedane per lo stacco, manubri fino a 50&nbsp;kg e macchine isotoniche per ogni distretto muscolare.</p>
+              <ul class="specs" aria-label="Dotazioni sala pesi">
+                <li>6 rack</li><li>Manubri 2–50 kg</li><li>Pedane da stacco</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="area reveal">
+            <div class="area__media">
+              <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&h=675&q=75"
+                srcset="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=600&h=450&q=75 600w,
+                        https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&h=675&q=75 900w"
+                sizes="(min-width: 64em) 42vw, (min-width: 40em) 50vw, 100vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="Atleta che esegue onde con le battle rope su un pavimento di cemento in uno spazio industriale">
+              <span class="area__num" aria-hidden="true">02</span>
+            </div>
+            <div class="area__body">
+              <h3 class="area__title">Area functional</h3>
+              <p>180&nbsp;mq di pavimento tecnico con corde, kettlebell, slitte, box pliometrici e anelli. Il posto giusto per il Cross Training e la preparazione atletica.</p>
+              <ul class="specs" aria-label="Dotazioni area functional">
+                <li>Battle rope</li><li>Kettlebell 4–40 kg</li><li>Pista per slitta</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="area reveal">
+            <div class="area__media">
+              <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=900&h=675&q=75"
+                srcset="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=600&h=450&q=75 600w,
+                        https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=900&h=675&q=75 900w"
+                sizes="(min-width: 64em) 42vw, (min-width: 40em) 50vw, 100vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="Lezione di gruppo in una sala luminosa con mattoni a vista: cinque ragazze sollevano piccoli manubri sopra la testa">
+              <span class="area__num" aria-hidden="true">03</span>
+            </div>
+            <div class="area__body">
+              <h3 class="area__title">Sala corsi</h3>
+              <p>90&nbsp;mq con impianto audio, climatizzazione e pavimento ammortizzato. Qui si tengono Pilates, Yoga, Total Body, Boxe e Spinning.</p>
+              <ul class="specs" aria-label="Dotazioni sala corsi">
+                <li>Max 14 persone</li><li>Bike da spinning</li><li>Impianto audio</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="area reveal">
+            <div class="area__media">
+              <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=900&h=675&q=75"
+                srcset="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=600&h=450&q=75 600w,
+                        https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=900&h=675&q=75 900w,
+                        https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1300&h=975&q=75 1300w"
+                sizes="(min-width: 64em) 58vw, (min-width: 40em) 50vw, 100vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="Fila di tapis roulant in un ambiente scuro con soffitto industriale e pavimento in parquet segnato da linee gialle">
+              <span class="area__num" aria-hidden="true">04</span>
+            </div>
+            <div class="area__body">
+              <h3 class="area__title">Area cardio</h3>
+              <p>Tapis roulant, bike, ellittiche e vogatori affacciati sulla sala: perfetti per il riscaldamento o per il tuo lavoro aerobico, con fascia cardio in prestito.</p>
+              <ul class="specs" aria-label="Dotazioni area cardio">
+                <li>8 tapis roulant</li><li>4 vogatori</li><li>Fasce cardio</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="amenities reveal">
+          <h3 class="amenities__title">Compreso in ogni abbonamento</h3>
+          <ul class="amenities__list">
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shower"/></svg>Spogliatoi con docce calde</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>Armadietti con chiusura a codice</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wifi"/></svg>Wi-Fi gratuito</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-snow"/></svg>Sale climatizzate</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bike"/></svg>Rastrelliere per bici e scooter</li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-drop"/></svg>Acqua filtrata gratuita</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. STAFF -->
+    <section class="section theme-dark section--slant" id="staff" aria-labelledby="staff-title">
+      <span class="section__bignum" aria-hidden="true">02</span>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">02</span>Lo staff</p>
+          <h2 class="section__title" id="staff-title">Coach che ti chiamano per nome.</h2>
+          <p class="section__lead">Niente istruttori di passaggio: il team è sempre lo stesso. Ti segue dalla prima scheda ai risultati e sa quando spingerti e quando farti rallentare.</p>
+        </header>
+
+        <ul class="coaches">
+          <li class="coach reveal">
+            <div class="coach__media">
+              <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=600&h=750&q=75"
+                srcset="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=400&h=500&q=75 400w,
+                        https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=600&h=750&q=75 600w"
+                sizes="(min-width: 64em) 25vw, (min-width: 40em) 50vw, 100vw"
+                width="600" height="750" loading="lazy" decoding="async"
+                alt="Atleta ripreso di spalle mentre esegue una trazione alla sbarra, foto in bianco e nero">
+            </div>
+            <div class="coach__body">
+              <p class="coach__role">Head coach · Forza &amp; Cross Training</p>
+              <h3 class="coach__name">Davide Rinaldi</h3>
+              <p class="coach__bio">Laureato in Scienze Motorie, 12 anni di sala alle spalle. Ti insegna a sollevare bene, prima ancora che pesante.</p>
+              <ul class="tags"><li>Powerlifting</li><li>Preparazione atletica</li></ul>
+            </div>
+          </li>
+          <li class="coach reveal">
+            <div class="coach__media">
+              <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=600&h=750&q=75"
+                srcset="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=400&h=500&q=75 400w,
+                        https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=600&h=750&q=75 600w"
+                sizes="(min-width: 64em) 25vw, (min-width: 40em) 50vw, 100vw"
+                width="600" height="750" loading="lazy" decoding="async"
+                alt="Atleta ripresa di spalle che afferra un bilanciere appoggiato al rack, davanti a un muro di mattoni scuri">
+            </div>
+            <div class="coach__body">
+              <p class="coach__role">Functional &amp; Spinning</p>
+              <h3 class="coach__name">Giulia Marchetti</h3>
+              <p class="coach__bio">Ex pallavolista, porta in sala l'energia di una squadra. La sua lezione delle 7:00 è la sveglia migliore del quartiere.</p>
+              <ul class="tags"><li>Functional training</li><li>Indoor cycling</li></ul>
+            </div>
+          </li>
+          <li class="coach reveal">
+            <div class="coach__media">
+              <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=600&h=750&q=75"
+                srcset="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=400&h=500&q=75 400w,
+                        https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=600&h=750&q=75 600w"
+                sizes="(min-width: 64em) 25vw, (min-width: 40em) 50vw, 100vw"
+                width="600" height="750" loading="lazy" decoding="async"
+                alt="Donna in posizione yoga del cane a testa in giù su un tappetino, foto in bianco e nero">
+            </div>
+            <div class="coach__body">
+              <p class="coach__role">Yoga &amp; Pilates</p>
+              <h3 class="coach__name">Elena Sarti</h3>
+              <p class="coach__bio">Insegna da 9 anni: mobilità, postura e respiro per chi si allena duro e per chi riparte da zero dopo uno stop.</p>
+              <ul class="tags"><li>Hatha &amp; Vinyasa</li><li>Pilates matwork</li></ul>
+            </div>
+          </li>
+          <li class="coach reveal">
+            <div class="coach__media coach__media--top">
+              <img src="https://images.unsplash.com/photo-1591117207239-788bf8de6c3b?auto=format&fit=crop&w=600&h=1000&q=75"
+                srcset="https://images.unsplash.com/photo-1591117207239-788bf8de6c3b?auto=format&fit=crop&w=400&h=667&q=75 400w,
+                        https://images.unsplash.com/photo-1591117207239-788bf8de6c3b?auto=format&fit=crop&w=600&h=1000&q=75 600w"
+                sizes="(min-width: 64em) 25vw, (min-width: 40em) 50vw, 100vw"
+                width="600" height="1000" loading="lazy" decoding="async"
+                alt="Primo piano di un guantone da boxe che colpisce, con schizzi di sudore controluce, foto in bianco e nero">
+            </div>
+            <div class="coach__body">
+              <p class="coach__role">Boxe &amp; Total Body</p>
+              <h3 class="coach__name">Luca Bassi</h3>
+              <p class="coach__bio">Ex pugile dilettante con 40 incontri all'attivo. Insegna la boxe anche a chi non ha mai indossato un guantone, senza sparring obbligatorio.</p>
+              <ul class="tags"><li>Boxe</li><li>Condizionamento</li></ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. ORARI -->
+    <section class="section theme-light" id="orari" aria-labelledby="orari-title">
+      <span class="section__bignum" aria-hidden="true">03</span>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">03</span>Orari dei corsi</p>
+          <h2 class="section__title" id="orari-title">31 corsi a settimana. Trova il tuo orario.</h2>
+          <p class="section__lead">Lezioni a numero chiuso, massimo 14 persone, per seguirti come si deve. Prenoti il posto dall'app o in reception, fino a 30 minuti prima dell'inizio.</p>
+        </header>
+
+        <div class="schedule reveal" id="schedule">
+          <div class="filters" role="group" aria-labelledby="filters-label">
+            <p class="filters__label" id="filters-label">Filtra per corso</p>
+            <div class="filters__list" id="filters"></div>
+          </div>
+          <p class="sr-only" id="schedule-status" aria-live="polite"></p>
+
+          <div class="schedule__tabs" id="schedule-tabs" role="tablist" aria-label="Giorni della settimana"></div>
+          <div class="schedule__grid" id="schedule-grid"></div>
+
+          <noscript>
+            <p class="schedule__noscript">Per consultare l'orario dei corsi attiva JavaScript, oppure scrivici su WhatsApp: ti mandiamo il calendario aggiornato.</p>
+          </noscript>
+
+          <p class="schedule__note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg> Domenica: open gym dalle 9:00 alle 14:00, senza corsi. Nei festivi il calendario può variare.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ABBONAMENTI -->
+    <section class="section theme-dark section--slant" id="abbonamenti" aria-labelledby="abbonamenti-title">
+      <span class="section__bignum" aria-hidden="true">04</span>
+      <div class="container">
+        <header class="section__head section__head--split reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num">04</span>Abbonamenti</p>
+            <h2 class="section__title" id="abbonamenti-title">Prezzi chiari. Nessuna sorpresa.</h2>
+            <p class="section__lead">Nessun vincolo sul mensile e nessun costo nascosto. Scegli come allenarti, al resto pensiamo noi.</p>
+          </div>
+          <fieldset class="billing">
+            <legend class="billing__legend">Pagamento</legend>
+            <div class="billing__options">
+              <input type="radio" name="billing" id="billing-monthly" value="monthly" checked>
+              <label for="billing-monthly">Mensile</label>
+              <input type="radio" name="billing" id="billing-yearly" value="yearly">
+              <label for="billing-yearly">Annuale <span class="billing__save">2 mesi gratis</span></label>
+            </div>
+          </fieldset>
+        </header>
+        <p class="sr-only" id="billing-status" aria-live="polite"></p>
+
+        <ul class="plans">
+          <li class="plan reveal">
+            <h3 class="plan__name">Open Sala</h3>
+            <p class="plan__for">Per chi si allena in autonomia</p>
+            <p class="plan__price">
+              <span class="plan__amount" data-monthly="€39" data-yearly="€390">€39</span>
+              <span class="plan__period" data-monthly="/mese" data-yearly="/anno">/mese</span>
+            </p>
+            <p class="plan__note" data-monthly="Senza vincolo, disdici quando vuoi" data-yearly="Pari a €32,50 al mese">Senza vincolo, disdici quando vuoi</p>
+            <ul class="plan__features">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Sala pesi e area cardio</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Scheda iniziale con un coach</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Spogliatoi e armadietto</li>
+              <li class="is-off"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-x"/></svg><span class="sr-only">Non incluso: </span>Corsi di gruppo</li>
+              <li class="is-off"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-x"/></svg><span class="sr-only">Non incluso: </span>Personal training</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="#prova" data-plan="Open Sala">Provala gratis<span class="sr-only"> con il piano Open Sala</span></a>
+          </li>
+
+          <li class="plan plan--featured reveal">
+            <p class="plan__ribbon">Il più scelto</p>
+            <h3 class="plan__name">Full Club</h3>
+            <p class="plan__for">Sala e tutti i corsi, senza limiti</p>
+            <p class="plan__price">
+              <span class="plan__amount" data-monthly="€59" data-yearly="€590">€59</span>
+              <span class="plan__period" data-monthly="/mese" data-yearly="/anno">/mese</span>
+            </p>
+            <p class="plan__note" data-monthly="Senza vincolo, disdici quando vuoi" data-yearly="Pari a €49,17 al mese">Senza vincolo, disdici quando vuoi</p>
+            <ul class="plan__features">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Tutto di Open Sala</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Corsi illimitati, prenotazione da app</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Area functional ad accesso libero</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Check-up e nuova scheda ogni 8 settimane</li>
+              <li class="is-off"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-x"/></svg><span class="sr-only">Non incluso: </span>Personal training</li>
+            </ul>
+            <a class="btn btn--fire btn--block" href="#prova" data-plan="Full Club">Provalo gratis<span class="sr-only"> con il piano Full Club</span></a>
+          </li>
+
+          <li class="plan reveal">
+            <h3 class="plan__name">Coaching</h3>
+            <p class="plan__for">Il tuo percorso, con il tuo coach</p>
+            <p class="plan__price">
+              <span class="plan__amount" data-monthly="€119" data-yearly="€1190">€119</span>
+              <span class="plan__period" data-monthly="/mese" data-yearly="/anno">/mese</span>
+            </p>
+            <p class="plan__note" data-monthly="Senza vincolo, disdici quando vuoi" data-yearly="Pari a €99,17 al mese">Senza vincolo, disdici quando vuoi</p>
+            <ul class="plan__features">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Tutto di Full Club</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>4 sessioni individuali al mese</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Programmazione su misura</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Check-in settimanale in chat</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="#prova" data-plan="Coaching">Provalo gratis<span class="sr-only"> con il piano Coaching</span></a>
+          </li>
+
+          <li class="plan reveal">
+            <h3 class="plan__name">Under 26</h3>
+            <p class="plan__for">Per studenti e under 26</p>
+            <p class="plan__price">
+              <span class="plan__amount" data-monthly="€45" data-yearly="€450">€45</span>
+              <span class="plan__period" data-monthly="/mese" data-yearly="/anno">/mese</span>
+            </p>
+            <p class="plan__note" data-monthly="Serve un documento all'iscrizione" data-yearly="Pari a €37,50 al mese">Serve un documento all'iscrizione</p>
+            <ul class="plan__features">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Sala pesi, cardio e functional</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Corsi inclusi</li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Lun–ven fino alle 17:00, weekend libero</li>
+              <li class="is-off"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-x"/></svg><span class="sr-only">Non incluso: </span>Personal training</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="#prova" data-plan="Under 26">Provalo gratis<span class="sr-only"> con il piano Under 26</span></a>
+          </li>
+        </ul>
+
+        <ul class="extras reveal">
+          <li><strong>€12</strong> ingresso singolo</li>
+          <li><strong>€100</strong> carnet 10 ingressi</li>
+          <li><strong>€25</strong> quota annuale, assicurazione inclusa</li>
+        </ul>
+        <p class="plans__fineprint">Per iniziare serve il certificato medico per attività sportiva non agonistica. Prezzi IVA inclusa.</p>
+      </div>
+    </section>
+
+    <!-- RECENSIONI -->
+    <section class="section theme-brick" id="recensioni" aria-labelledby="recensioni-title">
+      <div class="container reviews">
+        <header class="reviews__head reveal">
+          <p class="eyebrow">Dicono di noi</p>
+          <h2 class="section__title" id="recensioni-title"><span class="reviews__score">4,9</span> su 5. Parola dei soci.</h2>
+          <p class="reviews__count"><span class="stars" aria-hidden="true"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span> Media di 186 recensioni</p>
+        </header>
+        <ul class="reviews__list">
+          <li class="review reveal">
+            <figure>
+              <blockquote><p>Ho provato tre palestre in zona prima di arrivare qui. La differenza? Alla Forgia il coach si ricorda del tuo ginocchio anche dopo sei mesi.</p></blockquote>
+              <figcaption><span class="review__avatar" aria-hidden="true">MR</span><span><strong>Martina R.</strong> socia dal 2021</span></figcaption>
+            </figure>
+          </li>
+          <li class="review reveal">
+            <figure>
+              <blockquote><p>Le lezioni di boxe di Luca sono la parte migliore della mia settimana. Zero esaltati, tanto lavoro tecnico e un gruppo fantastico.</p></blockquote>
+              <figcaption><span class="review__avatar" aria-hidden="true">AP</span><span><strong>Andrea P.</strong> socio dal 2022</span></figcaption>
+            </figure>
+          </li>
+          <li class="review reveal">
+            <figure>
+              <blockquote><p>Ho iniziato a 52 anni senza aver mai toccato un bilanciere. Oggi faccio lo stacco con 80&nbsp;kg e la schiena non mi fa più male.</p></blockquote>
+              <figcaption><span class="review__avatar" aria-hidden="true">SL</span><span><strong>Stefano L.</strong> socio dal 2020</span></figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. PROVA GRATUITA -->
+    <section class="section theme-light" id="prova" aria-labelledby="prova-title">
+      <span class="section__bignum" aria-hidden="true">05</span>
+      <div class="container trial">
+        <div class="trial__intro reveal">
+          <p class="eyebrow"><span class="eyebrow__num">05</span>Prova gratuita</p>
+          <h2 class="section__title" id="prova-title">Il primo giorno lo offriamo noi.</h2>
+          <p class="section__lead">Vieni ad allenarti per un giorno intero: sala pesi, un corso a scelta e una chiacchierata con un coach. Se ti trovi bene, ne parliamo. Se no, amici come prima.</p>
+          <ol class="steps">
+            <li><span class="steps__num" aria-hidden="true">1</span><div><strong>Compila il modulo</strong><span>Ci vogliono 30 secondi.</span></div></li>
+            <li><span class="steps__num" aria-hidden="true">2</span><div><strong>Ti richiamiamo</strong><span>Entro 24 ore fissiamo giorno e orario.</span></div></li>
+            <li><span class="steps__num" aria-hidden="true">3</span><div><strong>Vieni ad allenarti</strong><span>Porta scarpe pulite e un asciugamano. Al resto pensiamo noi.</span></div></li>
+          </ol>
+          <div class="trial__media">
+            <img src="https://images.unsplash.com/photo-1517438322307-e67111335449?auto=format&fit=crop&w=800&h=560&q=75"
+              srcset="https://images.unsplash.com/photo-1517438322307-e67111335449?auto=format&fit=crop&w=560&h=392&q=75 560w,
+                      https://images.unsplash.com/photo-1517438322307-e67111335449?auto=format&fit=crop&w=800&h=560&q=75 800w"
+              sizes="(min-width: 64em) 40vw, 100vw"
+              width="800" height="560" loading="lazy" decoding="async"
+              alt="Allenatore con i colpitori da boxe che lavora con un'allieva guantonata davanti a un muro di mattoni">
+          </div>
+        </div>
+
+        <div class="trial__card reveal">
+          <form class="form" id="trial-form" novalidate aria-labelledby="form-title" aria-describedby="form-intro">
+            <h3 class="form__title" id="form-title">Prenota la tua prova</h3>
+            <p class="form__intro" id="form-intro">I campi con <span aria-hidden="true">*</span><span class="sr-only">asterisco</span> sono obbligatori.</p>
+
+            <div class="form__grid">
+              <div class="field">
+                <label for="f-nome">Nome <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-nome" name="nome" type="text" autocomplete="given-name" required aria-describedby="f-nome-err">
+                <p class="field__error" id="f-nome-err" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="f-cognome">Cognome <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-cognome" name="cognome" type="text" autocomplete="family-name" required aria-describedby="f-cognome-err">
+                <p class="field__error" id="f-cognome-err" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err">
+                <p class="field__error" id="f-email-err" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="f-tel">Telefono <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="f-tel-hint f-tel-err">
+                <p class="field__hint" id="f-tel-hint">Ti chiamiamo solo per fissare la prova.</p>
+                <p class="field__error" id="f-tel-err" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="f-giorno">Giorno preferito <span class="req" aria-hidden="true">*</span></label>
+                <select id="f-giorno" name="giorno" required aria-describedby="f-giorno-err">
+                  <option value="">Scegli un giorno</option>
+                  <option value="lunedì">Lunedì</option>
+                  <option value="martedì">Martedì</option>
+                  <option value="mercoledì">Mercoledì</option>
+                  <option value="giovedì">Giovedì</option>
+                  <option value="venerdì">Venerdì</option>
+                  <option value="sabato">Sabato</option>
+                  <option value="domenica">Domenica (solo sala pesi)</option>
+                </select>
+                <p class="field__error" id="f-giorno-err" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="f-interesse">Cosa vuoi provare? <span class="req" aria-hidden="true">*</span></label>
+                <select id="f-interesse" name="interesse" required aria-describedby="f-interesse-err">
+                  <option value="">Scegli un'attività</option>
+                  <option>Sala pesi</option>
+                  <option>Functional</option>
+                  <option>Cross Training</option>
+                  <option>Spinning</option>
+                  <option>Boxe</option>
+                  <option>Total Body</option>
+                  <option>Yoga</option>
+                  <option>Pilates</option>
+                  <option>Non so ancora, consigliatemi voi</option>
+                </select>
+                <p class="field__error" id="f-interesse-err" aria-live="polite"></p>
+              </div>
+              <div class="field field--full">
+                <label for="f-piano">Abbonamento che ti interessa <span class="field__opt">(facoltativo)</span></label>
+                <select id="f-piano" name="piano">
+                  <option value="">Non lo so ancora</option>
+                  <option>Open Sala</option>
+                  <option>Full Club</option>
+                  <option>Coaching</option>
+                  <option>Under 26</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="f-note">Obiettivi o infortuni da segnalarci <span class="field__opt">(facoltativo)</span></label>
+                <textarea id="f-note" name="note" rows="3" maxlength="500"></textarea>
+              </div>
+            </div>
+
+            <div class="field field--check">
+              <input id="f-privacy" name="privacy" type="checkbox" required aria-describedby="f-privacy-err">
+              <label for="f-privacy">Ho letto l'informativa privacy e acconsento a essere ricontattato per la prova gratuita. <span class="req" aria-hidden="true">*</span></label>
+              <p class="field__error" id="f-privacy-err" aria-live="polite"></p>
+            </div>
+            <details class="form__privacy">
+              <summary>Leggi l'informativa in breve</summary>
+              <p>Usiamo nome, contatti e preferenze solo per organizzare la tua prova gratuita. Non cediamo i dati a terzi e li cancelliamo dopo 12 mesi, o prima se ce lo chiedi scrivendo a info@forgiafitness.example.</p>
+            </details>
+
+            <p class="form__status" id="form-status" role="alert"></p>
+
+            <button class="btn btn--fire btn--lg btn--block" type="submit">
+              <span class="btn__label">Prenota la prova<span class="hide-sm"> gratuita</span></span>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+            </button>
+            <p class="form__demo">Sito dimostrativo: i dati non vengono inviati né salvati.</p>
+          </form>
+
+          <div class="form-success" id="form-success" tabindex="-1" role="group" aria-labelledby="success-title" aria-describedby="success-text" hidden>
+            <span class="form-success__icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+            <h3 class="form__title" id="success-title">Richiesta ricevuta!</h3>
+            <p id="success-text">Ti contatteremo entro 24 ore per confermare la tua prova gratuita.</p>
+            <p class="form-success__tip">Nel frattempo dai un'occhiata agli <a href="#orari">orari dei corsi</a>.</p>
+            <button class="btn btn--ghost-dark" type="button" id="form-reset">Invia un'altra richiesta</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTATTI -->
+    <section class="section theme-dark section--slant" id="contatti" aria-labelledby="contatti-title">
+      <span class="section__bignum" aria-hidden="true">06</span>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__num">06</span>Contatti</p>
+          <h2 class="section__title" id="contatti-title">Passa a trovarci.</h2>
+        </header>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <ul class="contact__list">
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>
+                <div><span class="contact__label">Indirizzo</span>
+                  <address>Via dell'Incudine 27<br>00100 Roma</address>
+                  <span class="contact__sub">Ingresso dal cortile, citofono «Forgia»</span></div>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>
+                <div><span class="contact__label">Telefono e WhatsApp</span>
+                  <a href="tel:+390000000000">+39 000 000 0000</a></div>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>
+                <div><span class="contact__label">Email</span>
+                  <a href="mailto:info@forgiafitness.example">info@forgiafitness.example</a></div>
+              </li>
+            </ul>
+
+            <div class="hours">
+              <div class="hours__head">
+                <h3 class="hours__title">Orari di apertura</h3>
+                <p class="hours__status" id="open-status" hidden></p>
+              </div>
+              <table class="hours__table">
+                <caption class="sr-only">Orari di apertura della palestra</caption>
+                <tbody>
+                  <tr data-days="1,2,3,4,5"><th scope="row">Lunedì – Venerdì</th><td>06:30 – 22:30</td></tr>
+                  <tr data-days="6"><th scope="row">Sabato</th><td>08:00 – 20:00</td></tr>
+                  <tr data-days="0"><th scope="row">Domenica</th><td>09:00 – 14:00</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="contact__ctas">
+              <a class="btn btn--wa btn--lg" href="https://wa.me/390000000000?text=Ciao%20Forgia!%20Vorrei%20qualche%20informazione%20sulla%20palestra." target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg> Scrivici su WhatsApp<span class="sr-only"> (si apre in una nuova scheda)</span>
+              </a>
+              <a class="btn btn--ghost btn--lg" href="tel:+390000000000"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg> Chiamaci</a>
+            </div>
+          </div>
+
+          <div class="contact__map reveal">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=12.47%2C41.88%2C12.50%2C41.90&amp;layer=mapnik"
+              title="Mappa di una zona di Roma dove si trova la palestra (indirizzo di fantasia)"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="contact__map-note">Mappa © OpenStreetMap contributors · <a href="https://www.openstreetmap.org/#map=15/41.89/12.485" target="_blank" rel="noopener">Apri la mappa<span class="sr-only"> (si apre in una nuova scheda)</span></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="stripe" aria-hidden="true"></div>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="#top" aria-label="Forgia Fitness Club, torna all'inizio">
+          <svg class="brand__mark" aria-hidden="true" focusable="false"><use href="#i-anvil"/></svg>
+          <span class="brand__text"><span class="brand__name">Forgia</span><span class="brand__sub">Fitness Club</span></span>
+        </a>
+        <p>La palestra di quartiere dove ci si allena sul serio. Via dell'Incudine 27, Roma.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Link rapidi">
+        <ul>
+          <li><a href="#struttura">Struttura</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#orari">Orari</a></li>
+          <li><a href="#abbonamenti">Abbonamenti</a></li>
+          <li><a href="#prova">Prova gratuita</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer__demo">
+      <p>Sito dimostrativo · contenuti e nomi di fantasia · Foto: Unsplash</p>
+      <p>Realizzato da Alessio Fantini · <a href="../">← Tutte le demo</a></p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/390000000000?text=Ciao%20Forgia!%20Vorrei%20informazioni%20sulla%20prova%20gratuita." target="_blank" rel="noopener">
+    <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg>
+    <span class="sr-only">Scrivici su WhatsApp (si apre in una nuova scheda)</span>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
